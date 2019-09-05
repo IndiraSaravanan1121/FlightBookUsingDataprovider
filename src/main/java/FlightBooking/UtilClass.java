@@ -10,12 +10,11 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class UtilClass {
+	
 	static Workbook book;
 	static Sheet sheet;
-
-	public static String filePath = "C:\\Users\\indira.saravanan\\eclipse-workspace\\FlightBooking\\src\\main\\resources\\Locator\\TestData.xlsx";
-//public static void main(String[] args) {
 	
+	public static String filePath = "C:\\Users\\indira.saravanan\\eclipse-workspace\\FlightBooking\\src\\main\\resources\\Locator\\TestData.xlsx";
 
 	public static Object[][] ReadWriteExcel(String sheetName) {
 		FileInputStream file = null;

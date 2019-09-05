@@ -1,16 +1,15 @@
 package FlightBooking;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
-public class TestScript extends OneWayTrip {
+public class NoOfPassengerOneWay extends OneWayTrip{
 
-	@Test(priority = 2)
-	public void testScript() throws InterruptedException {
+
+	@Test(priority=2)
+	public void noOfPassenger() throws InterruptedException {
 
 		driver.findElement(By.xpath("(//input[@id='departureDate'])[2]")).click();
 		Thread.sleep(2000);
@@ -25,15 +24,13 @@ public class TestScript extends OneWayTrip {
 		childs.selectByValue("1");
 		WebElement no_Of_Infacts = driver.findElement(By.name("infants"));
 		Select infacts = new Select(no_Of_Infacts);
-		infacts.selectByValue("1");
+		infacts.selectByValue("0");
 		WebElement cabinClass = driver.findElement(By.name("cabinClass"));
 		Select cabclass = new Select(cabinClass);
 		cabclass.selectByValue("b");
-
-	}
-
-	@AfterTest
-	public void clickButton() {
 		driver.findElement(By.xpath("//*[@id=\"flights-tab\"]/div/div/div[3]/div[2]/div/button")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("(//*[@id=\"flightDetails\"]/button)[2]")).click();
+
 	}
 }
