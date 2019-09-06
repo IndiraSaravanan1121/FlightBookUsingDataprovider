@@ -1,24 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="0" skipped="2">
+<testng-results ignored="0" total="4" passed="0" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-09-05T15:44:02Z" name="TestSuite" finished-at="2019-09-05T15:44:35Z" duration-ms="33147">
+  <suite started-at="2019-09-06T15:37:49Z" name="Default suite" finished-at="2019-09-06T15:38:11Z" duration-ms="22587">
     <groups>
     </groups>
-    <test started-at="2019-09-05T15:44:02Z" name="chromeTest" finished-at="2019-09-05T15:44:04Z" duration-ms="2137">
-      <class name="FlightBooking.OneWayTrip">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:FlightBooking.OneWayTrip@5db45159]" started-at="2019-09-05T21:14:02Z" name="setup" finished-at="2019-09-05T21:14:02Z" duration-ms="88" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
+    <test started-at="2019-09-06T15:37:49Z" name="Default test" finished-at="2019-09-06T15:38:11Z" duration-ms="22587">
+      <class name="com.atmecs.FlightBooking.BaseClass.BaseClass$Base">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.atmecs.FlightBooking.BaseClass.BaseClass$Base@6107227e]" started-at="2019-09-06T21:07:49Z" name="setup" finished-at="2019-09-06T21:08:07Z" duration-ms="18486" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created
+from chrome not reachable
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T20:55:26'
+System info: host: 'ATMECSINDT-083', ip: '50.50.50.132', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00B27C53+1473619]
+	Ordinal0 [0x00AAAD71+961905]
+	Ordinal0 [0x00A3415C+475484]
+	Ordinal0 [0x00A2DAEA+449258]
+	Ordinal0 [0x00A2E188+450952]
+	Ordinal0 [0x00A2F295+455317]
+	Ordinal0 [0x00A2B495+439445]
+	Ordinal0 [0x00A34F10+478992]
+	Ordinal0 [0x009E98FE+170238]
+	Ordinal0 [0x009E8D1D+167197]
+	Ordinal0 [0x009E742B+160811]
+	Ordinal0 [0x009D0AE6+68326]
+	Ordinal0 [0x009D1BF0+72688]
+	Ordinal0 [0x009D1B89+72585]
+	Ordinal0 [0x00AC4B37+1067831]
+	GetHandleVerifier [0x00BC6845+506677]
+	GetHandleVerifier [0x00BC65E0+506064]
+	GetHandleVerifier [0x00BCD188+533624]
+	GetHandleVerifier [0x00BC701A+508682]
+	Ordinal0 [0x00ABC226+1032742]
+	Ordinal0 [0x00ABC09F+1032351]
+	Ordinal0 [0x00AC6A4B+1075787]
+	Ordinal0 [0x00AC6BB3+1076147]
+	Ordinal0 [0x00AC5B65+1071973]
+	BaseThreadInitThunk [0x755C60C9+25]
+	RtlGetAppContainerNamedObjectPath [0x770C7A94+228]
+	RtlGetAppContainerNamedObjectPath [0x770C7A64+180]
+]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at FlightBooking.BaseClass.setup(BaseClass.java:79)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T20:55:26'
+System info: host: 'ATMECSINDT-083', ip: '50.50.50.132', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00B27C53+1473619]
+	Ordinal0 [0x00AAAD71+961905]
+	Ordinal0 [0x00A3415C+475484]
+	Ordinal0 [0x00A2DAEA+449258]
+	Ordinal0 [0x00A2E188+450952]
+	Ordinal0 [0x00A2F295+455317]
+	Ordinal0 [0x00A2B495+439445]
+	Ordinal0 [0x00A34F10+478992]
+	Ordinal0 [0x009E98FE+170238]
+	Ordinal0 [0x009E8D1D+167197]
+	Ordinal0 [0x009E742B+160811]
+	Ordinal0 [0x009D0AE6+68326]
+	Ordinal0 [0x009D1BF0+72688]
+	Ordinal0 [0x009D1B89+72585]
+	Ordinal0 [0x00AC4B37+1067831]
+	GetHandleVerifier [0x00BC6845+506677]
+	GetHandleVerifier [0x00BC65E0+506064]
+	GetHandleVerifier [0x00BCD188+533624]
+	GetHandleVerifier [0x00BC701A+508682]
+	Ordinal0 [0x00ABC226+1032742]
+	Ordinal0 [0x00ABC09F+1032351]
+	Ordinal0 [0x00AC6A4B+1075787]
+	Ordinal0 [0x00AC6BB3+1076147]
+	Ordinal0 [0x00AC5B65+1071973]
+	BaseThreadInitThunk [0x755C60C9+25]
+	RtlGetAppContainerNamedObjectPath [0x770C7A94+228]
+	RtlGetAppContainerNamedObjectPath [0x770C7A64+180]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$1(ProtocolHandshake.java:127)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:129)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:210)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:73)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at com.atmecs.FlightBooking.BaseClass.BaseClass$Base.setup(BaseClass.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -44,25 +136,33 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="OneWayTrip()[pri:0, instance:FlightBooking.OneWayTrip@5db45159]" started-at="2019-09-05T21:14:03Z" name="OneWayTrip" finished-at="2019-09-05T21:14:03Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="close()[pri:0, instance:com.atmecs.FlightBooking.BaseClass.BaseClass$Base@6107227e]" started-at="2019-09-06T21:08:11Z" name="close" finished-at="2019-09-06T21:08:11Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.atmecs.FlightBooking.BaseClass.BaseClass$Base -->
+      <class name="com.atmecs.FlightBooking.testscript.OneWayTrip">
+        <test-method signature="OneWayTrip()[pri:0, instance:com.atmecs.FlightBooking.testscript.OneWayTrip@7c417213]" started-at="2019-09-06T21:08:07Z" name="OneWayTrip" finished-at="2019-09-06T21:08:09Z" duration-ms="2012" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at FlightBooking.BaseClass.setup(BaseClass.java:79)
+	at com.atmecs.FlightBooking.testscript.OneWayTrip.OneWayTrip(OneWayTrip.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
-	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
@@ -82,21 +182,35 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OneWayTrip -->
-        <test-method signature="passengerDetails1(java.lang.String, java.lang.String)[pri:1, instance:FlightBooking.OneWayTrip@5db45159]" started-at="2019-09-05T21:14:04Z" name="passengerDetails1" data-provider="getDetails" finished-at="2019-09-05T21:14:04Z" duration-ms="0" status="SKIP">
+        <test-method signature="passengerDetails1(java.lang.String, java.lang.String)[pri:1, instance:com.atmecs.FlightBooking.testscript.OneWayTrip@7c417213]" started-at="2019-09-06T21:08:11Z" name="passengerDetails1" data-provider="getDetails" finished-at="2019-09-06T21:08:11Z" duration-ms="2" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chennai]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mumbai]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at FlightBooking.BaseClass.setup(BaseClass.java:79)
+	at com.atmecs.FlightBooking.testscript.OneWayTrip.passengerDetails1(OneWayTrip.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
-	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
@@ -116,50 +230,118 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passengerDetails1 -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:FlightBooking.OneWayTrip@5db45159]" started-at="2019-09-05T21:14:04Z" name="closebrowser" finished-at="2019-09-05T21:14:04Z" duration-ms="0" status="SKIP">
+        <test-method signature="noOfPassenger()[pri:2, instance:com.atmecs.FlightBooking.testscript.OneWayTrip@7c417213]" started-at="2019-09-06T21:08:11Z" name="noOfPassenger" finished-at="2019-09-06T21:08:11Z" duration-ms="4" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.atmecs.FlightBooking.testscript.OneWayTrip.noOfPassenger(OneWayTrip.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closebrowser -->
-      </class> <!-- FlightBooking.OneWayTrip -->
-    </test> <!-- chromeTest -->
-    <test started-at="2019-09-05T15:44:05Z" name="test2" finished-at="2019-09-05T15:44:35Z" duration-ms="30936">
-      <class name="FlightBooking.RoundTrip">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:FlightBooking.RoundTrip@6b4a4e18]" started-at="2019-09-05T21:14:05Z" name="setup" finished-at="2019-09-05T21:14:26Z" duration-ms="20986" status="PASS">
+        </test-method> <!-- noOfPassenger -->
+        <test-method signature="passengerDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.atmecs.FlightBooking.testscript.OneWayTrip@7c417213]" started-at="2019-09-06T21:08:11Z" name="passengerDetails" data-provider="getPassengerDetails" finished-at="2019-09-06T21:08:11Z" duration-ms="8" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="roundTrip()[pri:0, instance:FlightBooking.RoundTrip@6b4a4e18]" started-at="2019-09-05T21:14:26Z" name="roundTrip" finished-at="2019-09-05T21:14:28Z" duration-ms="2527" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- roundTrip -->
-        <test-method signature="passengerDetails1(java.lang.String, java.lang.String)[pri:1, instance:FlightBooking.RoundTrip@6b4a4e18]" started-at="2019-09-05T21:14:28Z" name="passengerDetails1" data-provider="getDetails" finished-at="2019-09-05T21:14:31Z" duration-ms="2554" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chennai]]>
+                <![CDATA[Ind@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[mumbai]]>
+                <![CDATA[9.28782373E8]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Indira]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Saravanan]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Ranjitha]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Selvam]]>
               </value>
             </param>
           </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[\FlightBooking\src\main\resources\Locator\xpath.properties (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: \FlightBooking\src\main\resources\Locator\xpath.properties (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at com.atmecs.FlightBooking.testscript.OneWayTrip.passengerDetails(OneWayTrip.java:86)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- passengerDetails1 -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:FlightBooking.RoundTrip@6b4a4e18]" started-at="2019-09-05T21:14:31Z" name="closebrowser" finished-at="2019-09-05T21:14:35Z" duration-ms="4453" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closebrowser -->
-      </class> <!-- FlightBooking.RoundTrip -->
-    </test> <!-- test2 -->
-  </suite> <!-- TestSuite -->
+        </test-method> <!-- passengerDetails -->
+      </class> <!-- com.atmecs.FlightBooking.testscript.OneWayTrip -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

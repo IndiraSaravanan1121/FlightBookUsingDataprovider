@@ -3,14 +3,16 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test name="Test(failed)">
     <classes>
-      <class name="FlightBooking.PassengerDetailsRoundTrip">
+      <class name="FlightBooking.PassengerDetails">
         <methods>
+          <include name="passengerDetails1"/>
           <include name="closebrowser"/>
-          <include name="passengerDetails" invocation-numbers="0"/>
-          <include name="chooseFlight"/>
           <include name="setup"/>
+          <include name="noOfPassenger"/>
+          <include name="OneWayTrip"/>
+          <include name="passengerDetails"/>
         </methods>
-      </class> <!-- FlightBooking.PassengerDetailsRoundTrip -->
+      </class> <!-- FlightBooking.PassengerDetails -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
